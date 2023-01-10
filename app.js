@@ -16,11 +16,11 @@ async function init() {
 
     try {
         let user = await User.create({
-            name: "Anshul",
-            userId: "admin",
-            email: "admin@gmail.com",
+            name: "Maleena",
+            userId: "01",
+            email: "admin01@gmail.com",
             userType: "ADMIN",
-            password: bcrypt.hashSync("Welcome1", 8),
+            password: bcrypt.hashSync("12345678", 8),
             userStatus: constants.userStatus.approved
         })
         console.log(user)
@@ -48,3 +48,4 @@ app.get("/", (req, res) => res.send("Hi"))
 module.exports = app.listen(3000, () => console.log("Listening at localhost:3000"))
 //for testing netconnection
 //Test-NetConnection localhost -p 3000
+ // "test": "jest --testEnvironment=node --runInBand --detectOpenHandles --coverage./tests"
