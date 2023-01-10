@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1673354832628" clover="3.2.0">
-  <project timestamp="1673354832628" name="All files">
-    <metrics statements="279" coveredstatements="272" conditionals="63" coveredconditionals="51" methods="42" coveredmethods="40" elements="384" coveredelements="363" complexity="0" loc="279" ncloc="279" packages="8" files="17" classes="17"/>
+<coverage generated="1673369513396" clover="3.2.0">
+  <project timestamp="1673369513396" name="All files">
+    <metrics statements="279" coveredstatements="268" conditionals="63" coveredconditionals="49" methods="42" coveredmethods="39" elements="384" coveredelements="356" complexity="0" loc="279" ncloc="279" packages="8" files="17" classes="17"/>
     <package name="crm-app">
       <metrics statements="28" coveredstatements="25" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="3"/>
       <file name="app.js" path="C:\Users\SOHAIL\Desktop\MALEENA\crmModule\crm-app\app.js">
@@ -139,7 +139,7 @@
         <line num="133" count="3" type="stmt"/>
         <line num="138" count="4" type="stmt"/>
         <line num="139" count="2" type="stmt"/>
-        <line num="143" count="2" type="stmt"/>
+        <line num="143" count="1" type="stmt"/>
       </file>
       <file name="user.controller.js" path="C:\Users\SOHAIL\Desktop\MALEENA\crmModule\crm-app\controllers\user.controller.js">
         <metrics statements="64" coveredstatements="64" conditionals="16" coveredconditionals="16" methods="8" coveredmethods="8"/>
@@ -210,30 +210,30 @@
       </file>
     </package>
     <package name="crm-app.middlewares">
-      <metrics statements="22" coveredstatements="18" conditionals="8" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <metrics statements="22" coveredstatements="14" conditionals="8" coveredconditionals="2" methods="3" coveredmethods="2"/>
       <file name="authjwt.js" path="C:\Users\SOHAIL\Desktop\MALEENA\crmModule\crm-app\middlewares\authjwt.js">
-        <metrics statements="22" coveredstatements="18" conditionals="8" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <metrics statements="22" coveredstatements="14" conditionals="8" coveredconditionals="2" methods="3" coveredmethods="2"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="10" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="18" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="18" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
-        <line num="24" count="7" type="stmt"/>
-        <line num="25" count="7" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="35" count="3" type="cond" truecount="2" falsecount="2"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
-        <line num="39" count="3" type="stmt"/>
-        <line num="42" count="3" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
         <line num="46" count="3" type="stmt"/>
       </file>
     </package>
@@ -349,7 +349,7 @@
         <line num="4" count="6" type="stmt"/>
         <line num="12" count="6" type="stmt"/>
         <line num="14" count="5" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
         <line num="28" count="5" type="stmt"/>
         <line num="29" count="3" type="stmt"/>
         <line num="30" count="3" type="stmt"/>

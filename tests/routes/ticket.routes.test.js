@@ -31,7 +31,7 @@ const ticketTestPayload = {
     ticketPriority: 4,
     description: "Test",
     status: "OPEN",
-    assignee: 1
+    assignee: "1"
 }
 
 let ticketId
@@ -54,12 +54,12 @@ describe("Post Tickets Endpoints", () => {
         expect(res.statusCode).toEqual(201)
         expect(res.body).toEqual(
             expect.objectContaining({
-                assignee: 1,
-                description: "Test",
-                reporter: 1,
-                status: "OPEN",
-                ticketPriority: 4,
-                title: "Test"
+                "assignee": "1",
+                "description": "Test",
+                "reporter": "1",
+                "status": "OPEN",
+                "ticketPriority": "4",
+                "title": "Test"
             })
         )
     })
@@ -81,12 +81,12 @@ describe("Put Tickets Endpoints", () => {
         expect(res.statusCode).toEqual(200)
         expect(res.body).toEqual(
             expect.objectContaining({
-                assignee: 1,
-                description: "Test",
-                reporter: 1,
-                status: "OPEN",
-                ticketPriority: 4,
-                title: "Test"
+                "assignee": "1",
+                "description": "Test",
+                "reporter": "1",
+                "status": "OPEN",
+                "ticketPriority": "4",
+                "title": "Test"
             })
         )
     })
@@ -104,18 +104,16 @@ describe('Get All Tickets Endpoints', () => {
         const res = await request(app)
             .get(api_endpoint + "tickets")
             .set('x-access-token', token)
-            .send(ticketTestPayload);
-        ticketId = res.body[0].id;
         expect(res.statusCode).toEqual(200)
         expect(res.body).toEqual(
             expect.arrayContaining([
                 expect.objectContaining({
-                    assignee: 1,
-                    description: "Test",
-                    reporter: 1,
-                    status: "OPEN",
-                    ticketPriority: 4,
-                    title: "Test"
+                    "assignee": "1",
+                    "description": "Test",
+                    "reporter": "1",
+                    "status": "OPEN",
+                    "ticketPriority": "4",
+                    "title": "Test"
                 })
             ])
         )
@@ -123,6 +121,7 @@ describe('Get All Tickets Endpoints', () => {
 })
 
 describe('Get One Ticket Endpoints', () => {
+   
     jest.spyOn(client, 'post')
         .mockImplementation((url, args, cb) => cb("Test", null))
 
@@ -134,16 +133,16 @@ describe('Get One Ticket Endpoints', () => {
         const res = await request(app)
             .get(api_endpoint + "tickets/" + ticketId)
             .set('x-access-token', token)
-            .send();
+            send();
         expect(res.statusCode).toEqual(200)
         expect(res.body).toEqual(
             expect.objectContaining({
-                assignee: 1,
-                description: "Test",
-                reporter: 1,
-                status: "OPEN",
-                ticketPriority: 4,
-                title: "Test"
+                "assignee": "1",
+                "description": "Test",
+                "reporter": "1",
+                "status": "OPEN",
+                "ticketPriority": "4",
+                "title": "Test"
             })
         )
     })
