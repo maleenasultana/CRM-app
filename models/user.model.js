@@ -9,7 +9,7 @@ const userSchema = mongoose.Schema({
     userId: {
          type: String,
          required: true,
-         unique: true
+        //  unique: true
     },
     password: {
         type: String,
@@ -19,7 +19,7 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true,
         lowercase: true,
-        unique: true,
+        //  unique: true,
         minlength: 10,
         isEmail: true
     },

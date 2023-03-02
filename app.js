@@ -5,6 +5,8 @@ const express = require('express')
 const User = require("./models/user.model")
 const app = express()
 const bcrypt = require('bcryptjs')
+const cors = require('cors')
+app.use(cors())
 const constants = require("./utils/constants")
 async function init() {
     let user = await User.findOne({ userId: "admin" })
@@ -18,7 +20,7 @@ async function init() {
         let user = await User.create({
             name: "Maleena",
             userId: "01",
-            email: "admin01@gmail.com",
+            email: "admin@gmail.com",
             userType: "ADMIN",
             password: bcrypt.hashSync("12345678", 8),
             userStatus: constants.userStatus.approved
@@ -45,7 +47,7 @@ require("./routes/ticket.routes")(app)
 
 app.get("/", (req, res) => res.send("Hi"))
 
-module.exports = app.listen(3000, () => console.log("Listening at localhost:3000"))
+module.exports = app.listen(7500, () => console.log("Listening at localhost:3000"))
 //for testing netconnection
 //Test-NetConnection localhost -p 3000
  // "test": "jest --testEnvironment=node --runInBand --detectOpenHandles --coverage./tests"
