@@ -47,7 +47,7 @@ require("./routes/ticket.routes")(app)
 
 app.get("/", (req, res) => res.send("Hi"))
 
-module.exports = app.listen(7500, () => console.log("Listening at localhost:3000"))
+module.exports = app.listen(7500, () => console.log("Listening at localhost:7500"))
 //for testing netconnection
 //Test-NetConnection localhost -p 3000
  // "test": "jest --testEnvironment=node --runInBand --detectOpenHandles --coverage./tests"
