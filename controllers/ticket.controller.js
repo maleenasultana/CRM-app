@@ -2,7 +2,7 @@ const User = require("../models/user.model")
 const Ticket = require("../models/ticket.model")
 const constants = require("../utils/constants")
 const objectConverter = require("../utils/objectConverter")
-const sendEmail = require("../utils/NotificationClient").sendEmail
+//const sendEmail = require("../utils/NotificationClient").sendEmail
 
 exports.createTicket = async (req, res) => {
     const ticketObject = {
@@ -33,12 +33,12 @@ exports.createTicket = async (req, res) => {
             engineer.ticketsAssigned.push(ticket._id)
             await engineer.save()
 
-            sendEmail(ticket._id,
-                `Ticket with id : ${ticket._id} created`,
-                ticket.description,
-                user.email + "," + engineer.email,
-                user.email
-            )
+            // sendEmail(ticket._id,
+            //     `Ticket with id : ${ticket._id} created`,
+            //     ticket.description,
+            //     user.email + "," + engineer.email,
+            //     user.email
+            // )
 
             res.status(201).send(objectConverter.ticketResponse(ticket))
         }
@@ -89,12 +89,12 @@ exports.updateTicket = async (req, res) => {
             userId: ticket.reporter
         })
 
-        sendEmail(ticket._id,
-            `Ticket with id: ${ticket._id} updated`,
-            ticket.description,
-            savedUser.email + ',' + engineer.email + "," + reporter.email,
-            savedUser.email
-        )
+        // sendEmail(ticket._id,
+        //     `Ticket with id: ${ticket._id} updated`,
+        //     ticket.description,
+        //     savedUser.email + ',' + engineer.email + "," + reporter.email,
+        //     savedUser.email
+        // )
 
         res.status(200).send(objectConverter.ticketResponse(ticket))
 
