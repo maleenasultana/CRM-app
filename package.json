@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"npm i",
-    "test": "jest --testEnvironment=node --runInBand --detectOpenHandles --coverage./tests"
+    "test": "jest --testEnvironment=node --runInBand --detectOpenHandles --coverage./tests",
+    "start":"node app.js"
   },
   "author": "",
   "license": "ISC",
