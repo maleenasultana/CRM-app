@@ -18,11 +18,11 @@ exports.sendEmail = (ticketId, subject, content, emailIds, requester) => {
         headers: { "Content-Type": "application/json" }
     }
 
-    client.post("http://localhost:3030/notifiServ/api/notifications/",
-        args,
-        (data, response) => {
-            console.log("Request sent")
-            console.log(data)
-        }
-    )
+    // client.post("http://localhost:3030/notifiServ/api/notifications/",
+    //     args,
+    //     (data, response) => {
+    //         console.log("Request sent")
+    //         console.log(data)
+    //     }
+    //)
 }
