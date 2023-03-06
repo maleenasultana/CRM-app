@@ -47,9 +47,15 @@ require('./routes/auth.routes')(app)
 require("./routes/user.routes")(app)
 require("./routes/ticket.routes")(app)
 
-app.get("/", (req, res) => res.send("Hi"))
+app.get("/", (req, res) => res.send("Hello World"))
 
 module.exports = app.listen(`${PORT}`, () => console.log(`Listening at localhost:${PORT}`))
+
+
+
+//https://crm-app-yim0.onrender.com (Backend -----Deployed link)
+
+
 
 
 //for testing netconnection
