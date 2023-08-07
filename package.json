@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "jest --testEnvironment=node --runInBand --detectOpenHandles --coverage./tests",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "npm install  && npm install --prefix frontend && npm run build --prefix frontend"
     
   },
   "author": "",
