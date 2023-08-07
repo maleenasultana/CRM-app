@@ -33,7 +33,7 @@ async function init() {
     }
 }
 
-mongoose.connect(dbConfig.DB_URL)
+mongoose.connect(dbConfig.MONGO_URI)
 app.use(express.json())
 
 const db = mongoose.connection
