@@ -4,5 +4,3 @@ module.exports = {
     MONGO_URI:"mongodb+srv://maleena:masabtank@cluster0.6pah1dd.mongodb.net/?retryWrites=true&w=majority"
 }
 
-//https://crm-app-production.up.railway.app/
-//crm-app-production.up.railway.app

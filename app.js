@@ -33,7 +33,7 @@ async function init() {
     }
 }
 
-mongoose.connect(dbConfig.MONGO_URI)
+mongoose.connect(dbConfig.DB_URL)
 app.use(express.json())
 
 const db = mongoose.connection
@@ -53,7 +53,7 @@ module.exports = app.listen(`${PORT}`, () => console.log(`Listening at localhost
 
 
 
-//https://crm-app-yim0.onrender.com (Backend -----Deployed link)
+
 
 
 
